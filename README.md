@@ -15,10 +15,15 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-products)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
+
+## Sector Overview & Market Dynamics
+
+The global Enterprise Risk Management (ERM) software market is estimated at approximately **$6.0B to $7.0B** (expanding to over **$20B–$40B** across the broader enterprise GRC ecosystem) and growing at a ~14–15% CAGR driven by tightening regulations, cyber threats, and AI governance. The market is **highly fragmented** rather than winner-take-all: traditional enterprise heavyweights (e.g., ServiceNow, RSA Archer, MetricStream) anchor Fortune 500 deployments, while a diverse array of specialized mid-market suites, agile compliance automation vendors, and open-source self-hosted solutions thrive across distinct industry niches and regulatory tiers.
 
 ## SaaS/Hosted Platforms
 
