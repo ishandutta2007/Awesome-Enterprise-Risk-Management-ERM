@@ -26,6 +26,8 @@
 - [☁️ SaaS / Hosted ERM Platforms](#️-saas--hosted-erm-platforms)
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Star History](#star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 - [⚠️ Disclaimer](#️-disclaimer)
 
 ---
@@ -99,6 +101,21 @@ Contributions from risk professionals, GRC engineers, and developers are warmly 
    - For **Open-Source**: Provide the GitHub repo URL, active star count badge linking to `/stargazers`, stack details, and key ERM features.
 4. 🧪 **Check link validity & markdown formatting**.
 5. 🚀 **Submit a Pull Request** with a brief summary explaining the tool's core functionality.
+
+---
+
+##  Star History
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Enterprise-Risk-Management-ERM&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Enterprise-Risk-Management-ERM&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring this Enterprise Risk Management curated directory! If you found this resource helpful, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others in the security, risk, and compliance community discover it.
+- 🍴 **Fork and share** with colleagues, GRC engineers, and risk officers.
+- ☕ **Buy a coffee & sponsor**: If this project saved you or your team time, consider backing continuous updates via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
 
 ---
 
