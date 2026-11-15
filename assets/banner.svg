@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Animated Glowing Orbs in Background -->
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowEmerald" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25"/>
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.5; }
+      50% { transform: scale(1.15) translate(20px, -15px); opacity: 0.8; }
+    }
+    @keyframes floatCard1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes floatCard2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+    }
+    @keyframes dashFlow {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes radarSweep {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .orb-cyan { animation: pulseOrb 8s ease-in-out infinite alternate; transform-origin: 200px 100px; }
+    .orb-purple { animation: pulseOrb 10s ease-in-out infinite alternate-reverse; transform-origin: 1000px 300px; }
+    .card-float-1 { animation: floatCard1 6s ease-in-out infinite; }
+    .card-float-2 { animation: floatCard2 7s ease-in-out infinite; }
+    .flow-line { stroke-dasharray: 6 6; animation: dashFlow 3s linear infinite; }
+    .radar-rot { animation: radarSweep 12s linear infinite; transform-origin: 1060px 110px; }
+    .badge-pill { rx: 14; ry: 14; fill: #1e293b; stroke: #475569; stroke-width: 1; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #94a3b8; }
+  </style>
+
+  <!-- Deep Background -->
+  <rect width="1200" height="420" fill="url(#bgGrad)"/>
+  <rect width="1200" height="420" fill="url(#grid)"/>
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <circle class="orb-cyan" cx="220" cy="120" r="240" fill="url(#glowCyan)"/>
+  <circle class="orb-purple" cx="980" cy="280" r="260" fill="url(#glowPurple)"/>
+  <circle cx="600" cy="380" r="180" fill="url(#glowEmerald)"/>
+
+  <!-- Ambient Network Lines (Risk Topology Background) -->
+  <path d="M 50 350 Q 300 200 600 320 T 1150 180" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.3" class="flow-line"/>
+  <path d="M 80 100 Q 400 300 750 150 T 1120 340" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.25" class="flow-line"/>
+
+  <!-- Radar graphic in top-right background -->
+  <g opacity="0.25">
+    <circle cx="1060" cy="110" r="80" fill="none" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="1060" cy="110" r="55" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="3 3"/>
+    <circle cx="1060" cy="110" r="30" fill="none" stroke="#38bdf8" stroke-width="0.75"/>
+    <g class="radar-rot">
+      <line x1="1060" y1="110" x2="1140" y2="110" stroke="#38bdf8" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Left Accent Card (Dynamic Risk Score Metric) -->
+  <g class="card-float-1" transform="translate(60, 245)" filter="url(#shadow)">
+    <rect width="190" height="85" rx="12" fill="url(#cardGrad1)" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="32" cy="42" r="16" fill="#0369a1" fill-opacity="0.4"/>
+    <path d="M 27 42 L 31 46 L 38 37" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="58" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8" letter-spacing="0.5">COMPLIANCE HEALTH</text>
+    <text x="58" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">99.4% Validated</text>
+    <text x="58" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#38bdf8">ISO 27001 • SOC 2</text>
+  </g>
+
+  <!-- Right Accent Card (Dynamic Real-Time Threat Treatment) -->
+  <g class="card-float-2" transform="translate(950, 245)" filter="url(#shadow)">
+    <rect width="190" height="85" rx="12" fill="url(#cardGrad1)" stroke="#818cf8" stroke-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="32" cy="42" r="16" fill="#4338ca" fill-opacity="0.4"/>
+    <path d="M 32 32 L 32 44 M 32 49 L 32 51" fill="none" stroke="#a5b4fc" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="58" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8" letter-spacing="0.5">ACTIVE RISK REGISTER</text>
+    <text x="58" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#f8fafc">Zero Residual</text>
+    <text x="58" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#a5b4fc">Continuous Control</text>
+  </g>
+
+  <!-- Center Foreground Content (Title, Tagline, Subtitle - Completely Clear & Foregrounded) -->
+  <g text-anchor="middle">
+    <!-- Category Pill Badge -->
+    <g transform="translate(480, 50)">
+      <rect width="240" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.8"/>
+      <circle cx="20" cy="16" r="5" fill="#38bdf8"/>
+      <text x="130" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1.2">CURATED ECOSYSTEM 2026</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="url(#titleGrad)" letter-spacing="-0.5" filter="url(#shadow)">
+      Awesome Enterprise Risk Management
+    </text>
+
+    <!-- Subtitle / Focus Areas -->
+    <text x="600" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="500" fill="#cbd5e1" letter-spacing="0.2">
+      SaaS Platforms &amp; Open-Source GRC • Risk Registers • Continuous Compliance
+    </text>
+
+    <!-- Framework & Solution Pills in Foreground -->
+    <g transform="translate(240, 235)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="130" height="30" class="badge-pill"/>
+        <text x="65" y="20" class="badge-text" text-anchor="middle">⚡ ERM &amp; GRC</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(142, 0)">
+        <rect width="140" height="30" class="badge-pill"/>
+        <text x="70" y="20" class="badge-text" text-anchor="middle">🛡️ Risk Registers</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(294, 0)">
+        <rect width="135" height="30" class="badge-pill"/>
+        <text x="67.5" y="20" class="badge-text" text-anchor="middle">📊 Heat Maps</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(441, 0)">
+        <rect width="135" height="30" class="badge-pill"/>
+        <text x="67.5" y="20" class="badge-text" text-anchor="middle">🔍 Audit &amp; SOX</text>
+      </g>
+      <!-- Pill 5 -->
+      <g transform="translate(588, 0)">
+        <rect width="135" height="30" class="badge-pill"/>
+        <text x="67.5" y="20" class="badge-text" text-anchor="middle">🚀 Open Source</text>
+      </g>
+    </g>
+
+    <!-- Bottom Metric / Tagline Summary -->
+    <text x="600" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400" fill="#64748b">
+      Transparent SaaS Pricing Benchmarks &amp; Community-Driven Self-Hosted Implementations
+    </text>
+  </g>
+</svg>
