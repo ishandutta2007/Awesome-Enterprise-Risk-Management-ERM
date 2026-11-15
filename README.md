@@ -1,6 +1,6 @@
 # Awesome-Enterprise-Risk-Management-ERM
 
-# Top Enterprise Risk Management (ERM) Ecosystem
+## Top Enterprise Risk Management (ERM) Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on Risk Registers, Control Mapping & Self-Hosted GRC Platforms*  
