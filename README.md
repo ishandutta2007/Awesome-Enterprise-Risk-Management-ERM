@@ -72,9 +72,9 @@ The industry exhibits **high fragmentation** rather than a winner-take-all monop
 
 ## 💻 Open-Source GitHub Projects
 
-*The table below catalogs premier open-source ERM, self-hosted GRC platforms, and quantitative risk engines, **sorted in descending order by GitHub Stars**.*
+*The table below catalogs premier open-source ERM, self-hosted GRC platforms, and quantitative risk engines, **sorted in descending order by GitHub_Stars**.*
 
-| 🚀 Project | ⭐ Star Count & Stargazers Link | 🛠️ Architecture & Focus | 📋 Key Capabilities |
+| 🚀 Project | ⭐ Stars_Count & Stargazers Link | 🛠️ Architecture & Focus | 📋 Key Capabilities |
 |:---|:---:|:---|:---|
 | **[CISO Assistant](https://github.com/intuitem/ciso-assistant-community)** | [![Stars](https://img.shields.io/github/stars/intuitem/ciso-assistant-community?style=social&color=white)](https://github.com/intuitem/ciso-assistant-community/stargazers) | Python / Django / React (Docker self-hostable) | **One-stop-shop modern GRC platform** supporting 200+ global frameworks (ISO 27001, NIST CSF 2.0, SOC 2, NIS2, DORA, GDPR). Reusable risk registers, automatic control mapping, API/n8n/MCP integrations, and built-in privacy impact assessments. |
 | **[Comply](https://github.com/strongdm/comply)** | [![Stars](https://img.shields.io/github/stars/strongdm/comply?style=social&color=white)](https://github.com/strongdm/comply/stargazers) | Go / CLI / Markdown GitOps | **SOC 2 and compliance automation framework as code.** Generates audit-ready policies, orchestrates ticketing-based compliance workflows, maintains procedure registers, and embeds policy governance directly in Git repositories. |
@@ -98,7 +98,7 @@ Contributions from risk professionals, GRC engineers, and developers are warmly 
 2. 🌿 **Create a new branch** (`git checkout -b feature/add-new-erm-tool`).
 3. 📝 **Add your tool** following the existing tabular format:
    - For **SaaS**: Include accurate pricing starting tiers, specific trial limits, and company scale metrics.
-   - For **Open-Source**: Provide the GitHub repo URL, active star count badge linking to `/stargazers`, stack details, and key ERM features.
+   - For **Open-Source**: Provide the GitHub repo URL, active Stars_Count badge linking to `/stargazers`, stack details, and key ERM features.
 4. 🧪 **Check link validity & markdown formatting**.
 5. 🚀 **Submit a Pull Request** with a brief summary explaining the tool's core functionality.
 
